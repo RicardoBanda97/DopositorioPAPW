@@ -1,0 +1,170 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Monserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+
+img{
+	height: 400px;
+	width: 800px;
+}
+
+.padre{
+	display: flex;
+		flex-flow: column nowrap;
+}
+.margen-interno{
+	padding: 0 50px;
+}
+	.header{
+		background: url(Difuminado2.png);
+		background-position: center;
+		background-attachment: contain;
+		background-size: cover;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+		.menu{
+			display: flex;
+			flex-flow: row nowrap;
+			height: 60px;
+			background: rgba(0, 0, 0, 0.5);
+			align-items: center;
+		}
+			.logo{
+				flex: 1 1 auto; 
+			}
+				.logo a{
+					color: #fff;
+					font-size: 30px;
+				}
+					.logo a:hover{
+						color: #343434;
+					}
+			.buscador{
+				flex: 1 1 auto; 
+			}
+			.nav{
+				flex: 1 1 auto; 
+			}
+				.nav a{
+						color: #fff;
+						font-size: 11px;
+						text-transform: uppercase;
+						padding: 0 10px;
+						letter-spacing: 2px;
+				}
+					.nav a:hover{
+						color: #343434;
+					}
+			.social{
+				flex: 1 1 auto; 
+				display: flex;
+			}
+				.social a{
+						font-size:20px;
+						color:#fff;
+						padding:0 10px;
+				}
+					.social a:hover{
+						color:#343434;
+					}
+		.principal{
+			height: 430px;
+			display: flex;
+			align-items: center;
+		}
+			.info{
+				flex: 1 1 auto;
+				background: #ffff00;
+			}
+	.section{
+		display: flex;
+		background: #f7f7f7;
+	}
+		.videos{
+			flex: 1 1 80%;
+			display: flex;
+			flex-flow: column nowrap;
+			background: #f7f7f7;
+		}
+			.tema{
+				display: flex;
+				flex-flow: row nowrap; 
+				margin: 20px 0 20px 0;
+			}
+				.video{
+					flex: 1 1 20%;
+					color: #444;
+					font-size: 13px;
+					letter-spacing: 1px;
+					margin: 10px 10px 0 0px;
+					background:#ececec;
+				}
+					.video img{
+						width: 100%;
+					}
+					.video a{
+						padding: 7px;
+						margin: 7px 0;
+						background: black;
+						font-size: 13px;
+						color: white;
+						display: inline-block;
+					}
+					.video a:hover{
+						background: white;
+						color: black;
+					}
+	.aside{
+		/*position: fixed;
+		float: right;*/
+		flex: 1 1 20%;
+		margin:10px 5px 0 0px;
+		background: rgba(0, 0, 0, .5);
+		/*position:fixed; top: 60px; right: 2%;*/
+	}
+
+		.VideoJuegos ,.categorias{
+			padding: 10px 0;
+			margin: 0;
+			text-align: center;
+		}
+				h1{
+				font-family: 'Monserrat', sans-serif;
+				font-size: 17px;
+				padding: 0 10px;
+				color: #fff;
+				text-align: left;
+				text-transform: uppercase;
+				}
+				.VideoJuegos a, .categorias a{
+					font-size: 15px;
+					color: #fff;
+					display: inline-block;
+					width: 100%;
+					padding: 15px;
+				}
+					.VideoJuegos a:hover, .categorias a:hover{
+						background: #dfdfdf; 
+						color: #000
+					}
+	.footer{
+		background: #000;
+	}
+		.pie{
+			text-align: center;
+		}
+		.pie a{
+			padding: 0 10px;
+			color: #fff;
+			font-size: 11px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
