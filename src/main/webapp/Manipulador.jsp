@@ -12,7 +12,47 @@ public class Manipulador
     private Statement Sentencia = null;
     public HttpSession session;
 
-    
+      public Manipulador()
+        {
+            try
+            {Conexion = DriverManager.getConnection(url,usuario,clave);}
+
+            catch (Exception e)
+            {System.out.println("Error "+ e);}
+        }
+
+    public boolean IniciarSession(String correo, String contra)
+        {
+            try {
+                    String Query = "CALL Iniciar('"+correo+"')";
+                    Sentencia = Conexion.createStatement();
+                    Resultado = Sentencia.executeQuery(Query);
+
+                    while(Resultado.next())
+                    {       
+                
+                     if(Resultado.getString("Contrasena_Usuario").equals(base64DataString))  
+                        {   
+                            session.setAttribute("ID", Resultado.getString("idUsuario"));
+                            session.setAttribute("FotoPerfil", Resultado.getBlob("Usuario_Perfil"));
+                            session.setAttribute("Alias", Resultado.getString("Alias_Usuario"));
+                            Resultado.close();
+                            Sentencia.close();
+                            return true;
+                        }
+                        else{
+                            Resultado.close();
+                            Sentencia.close();
+                            return false;
+                        }
+                    }
+                }
+                
+            catch (Exception e) 
+            {System.out.println("Error "+ e);}
+
+            return false;
+        }  
 
         
 }

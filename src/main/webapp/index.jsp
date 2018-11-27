@@ -20,8 +20,32 @@
 						<input type="text" name="search" placeholder="buscar">
 					</div>
 					<div class="nav">
-						<a href="Registro.jsp"><span>Registrarse</span></a>
-						<a href="#"><span>Inicio de sesión</span></a>
+						     <%
+                             if(session.getAttribute("ID") != null)
+                              {
+                             
+                            Blob ImagenBloob = (Blob)session.getAttribute("FotoPerfil");
+                            byte[] ImagenBits = Base64.getEncoder().encode(ImagenBloob.getBytes(1,(int)ImagenBloob.length()));
+                            String ImagenString = new String(ImagenBits , "UTF-8");
+
+                             out.println("<div class='login-container'>"+
+                                          "<a href='Perfil.jsp'>"+
+                                          "<img src='data:image/jpeg;base64," +ImagenString+
+                                          "' style='width:25px;height:25px;'>"+
+                                          session.getAttribute("Alias")+"</a>"+
+                                          "</div>");
+
+                              }
+                              else
+                              {
+                              out.println("<a href='Registro.jsp'><span>Registrarse</span></a>"+
+                                          "<a href='Login.jsp'><span>Inicio de sesión</span></a>");       
+                               if(request.getParameterMap().containsKey("Msj"))
+                                 out.print("<p style='color:red;'>Usuario o contrasena invalidos</p>  ");               
+                              }
+                             %>
+						
+						
 					</div>
 					<div class="social">
 						<div>

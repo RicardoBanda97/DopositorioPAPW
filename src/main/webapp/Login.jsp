@@ -26,7 +26,7 @@
 						</div>
 					</div>
 					<div class="login margen-interno">
-						<form action="Iniciar" method="post" class="forma">
+						<form action="LoginScrip.jsp" method="post" class="forma">
 							<input type="text" name="user" placeholder="Usuario o Email">
 							<input type="password" name="password" placeholder="Contraseña">
 							<span>
