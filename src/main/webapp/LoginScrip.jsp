@@ -10,7 +10,7 @@
 
     try {
 
-         out.println(request.getParameter("user")+request.getParameter("password"))
+         out.println(request.getParameter("user")+request.getParameter("password"));
         if(Conn.IniciarSession(request.getParameter("user"), request.getParameter("password"))==true)
         {
         }
