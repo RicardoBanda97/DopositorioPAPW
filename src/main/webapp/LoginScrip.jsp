@@ -5,7 +5,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
 <%
-    Manipulador Conn = Manipulador GG();
+    Manipulador Conn = Manipulador();
     Conn.session=request.getSession();
 
     try {
