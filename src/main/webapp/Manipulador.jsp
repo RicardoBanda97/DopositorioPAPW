@@ -31,7 +31,7 @@ public class Manipulador
                     while(Resultado.next())
                     {       
                 
-                     if(Resultado.getString("Contrasena_Usuario").equals(base64DataString))  
+                     if(Resultado.getString("Contrasena_Usuario").equals(contra))  
                         {   
                             session.setAttribute("ID", Resultado.getString("idUsuario"));
                             session.setAttribute("FotoPerfil", Resultado.getBlob("Usuario_Perfil"));
