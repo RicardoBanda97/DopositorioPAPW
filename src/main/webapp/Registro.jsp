@@ -32,8 +32,8 @@
 					<img src="Image/avatar3.png" alt="" class="avatar">
 
 					<form action="Registro" method="post" class="forma">
-
-						<input type="text" name="nombre" placeholder="Usuario">
+						<input type="text" name="username" placeholder="Usuario">
+						<input type="text" name="nombre" placeholder="Nombre">
 						<input type="text" name="email" placeholder="Email">
 						<input type="password" name="password" placeholder="Contraseña">
 						<input type="text" name="city" placeholder="Ciudad">
