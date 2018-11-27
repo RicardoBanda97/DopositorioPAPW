@@ -26,6 +26,8 @@ public class Manipulador
             try {
                     Query = "CALL Iniciar('"+correo+"')";
                     Sentencia = Conexion.createStatement();
+                                         Query = "PAsa";
+
                     Resultado = Sentencia.executeQuery(Query);
                      Query = "PAsa1";
                     while(Resultado.next())
