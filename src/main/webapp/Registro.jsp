@@ -31,43 +31,15 @@
 
 					<img src="Image/avatar3.png" alt="" class="avatar">
 
-					<form action="Registrar" method="post" class="forma">
+					<form action="Registro" method="post" class="forma">
 
-						<input type="text" name="username" placeholder="Usuario">
+						<input type="text" name="nombre" placeholder="Usuario">
 						<input type="text" name="email" placeholder="Email">
 						<input type="password" name="password" placeholder="Contraseña">
-
-						<div class="birthday">
-							<p>Fecha de nacimiento</p>
-							<select>
-								<option value="1"> 1 </option>
-							</select>
-							<select>
-								<option value="1"> 1 </option>
-							</select>
-							<select>
-								<option value="1"> 1 </option>
-							</select>
-						</div>
-
-						<div class="radio">
-							<p>Género</p>
-	  		                <span>
-		  		                <span>
-									<input type="radio" name="gender" value="male">
-									<label>Hombre</label>
-								</span>
-	  		            	
-		  		            	<span>
-			  		            	<input type="radio" name="gender" 					   value="female">
-									<label>Mujer</label>
-								</span>
-							</span>
-
-  		                </div>
-
 						<input type="text" name="city" placeholder="Ciudad">
 						<input type="text" name="country" placeholder="País">
+                        <input type="file" name="fotoperfil">
+                        <input type="file" name="fotoportada">
 						<input type="submit" name="submit" value="REGISTRATE">
 
 					</form>

@@ -20,7 +20,7 @@
 						<input type="text" name="search" placeholder="buscar">
 					</div>
 					<div class="nav">
-						<a href="#"><span>Registrarse</span></a>
+						<a href="Registro.jsp"><span>Registrarse</span></a>
 						<a href="#"><span>Inicio de sesión</span></a>
 					</div>
 					<div class="social">
