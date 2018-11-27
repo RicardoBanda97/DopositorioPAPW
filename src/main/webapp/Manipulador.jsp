@@ -27,12 +27,13 @@ public class Manipulador
                     Query = "CALL Iniciar('"+correo+"')";
                     Sentencia = Conexion.createStatement();
                     Resultado = Sentencia.executeQuery(Query);
-
+                     Query = "PAsa1";
                     while(Resultado.next())
                     {       
-                
+                                     Query = "PAsa2";
                      if(Resultado.getString("Contrasena").equals(contra))  
                         {   
+                                                 Query = "PAsa3";
                             session.setAttribute("ID", Resultado.getString("idUsuario"));
                             session.setAttribute("FotoPerfil", Resultado.getBlob("Usuario_Perfil"));
                             session.setAttribute("Alias", Resultado.getString("Alias_Usuario"));
@@ -41,6 +42,7 @@ public class Manipulador
                             return true;
                         }
                         else{
+                                                 Query = "PAsa4";
                             Resultado.close();
                             Sentencia.close();
                             return false;
