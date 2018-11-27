@@ -11,7 +11,7 @@ public class Manipulador
     private ResultSet Resultado= null;
     private Statement Sentencia = null;
     public HttpSession session;
-
+     public String Query ;
       public Manipulador()
         {
             try
@@ -24,7 +24,7 @@ public class Manipulador
     public boolean IniciarSession(String correo, String contra)
         {
             try {
-                    String Query = "CALL Iniciar('"+correo+"')";
+                    Query = "CALL Iniciar('"+correo+"')";
                     Sentencia = Conexion.createStatement();
                     Resultado = Sentencia.executeQuery(Query);
 

@@ -10,15 +10,18 @@
 
     try {
 
-         
         if(Conn.IniciarSession(request.getParameter("user"), request.getParameter("password"))==true)
         {
-            response.sendRedirect("https://gran-papw.herokuapp.com/");
+            //response.sendRedirect("https://gran-papw.herokuapp.com/");
+            out.println(Conn.Query);
+
         }
 
         else
         {
-           response.sendRedirect("https://gran-papw.herokuapp.com/?Msj=1");
+           //response.sendRedirect("https://gran-papw.herokuapp.com/?Msj=1");
+                       out.println(Conn.Query);
+
         }
     } catch (Exception e) {
         //TODO: handle exception
