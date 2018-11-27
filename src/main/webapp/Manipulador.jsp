@@ -7,15 +7,16 @@ public class Manipulador
     private String usuario="b0e32b87cc7f53";
     private String clave="0b77eb87286b540 ";
 
-    private Connection Conexion =null;
-    private ResultSet Resultado= null;
-    private Statement Sentencia = null;
+
+    private Connection conn =null;
+    private ResultSet result= null;
+    private Statement stmt = null;
     public HttpSession session;
      public String Query ;
       public Manipulador()
         {
             try
-            {Conexion = DriverManager.getConnection(url,usuario,clave);}
+            {conn = DriverManager.getConnection(url,usuario,clave);}
 
             catch (Exception e)
             {System.out.println("Error "+ e);}
@@ -25,28 +26,22 @@ public class Manipulador
         {
             try {
                     Query = "CALL Iniciar('"+correo+"')";
-                    Sentencia = Conexion.createStatement();
-                                         Query = "PAsa";
-
-                    Resultado = Sentencia.executeQuery(Query);
-                     Query = "PAsa1";
-                    while(Resultado.next())
+                    stmt = conn.createStatement();
+                    result = stmt.executeQuery(Query);
+                    while(result.next())
                     {       
-                                     Query = "PAsa2";
-                     if(Resultado.getString("Contrasena").equals(contra))  
+                     if(result.getString("Contrasena").equals(contra))  
                         {   
-                                                 Query = "PAsa3";
-                            session.setAttribute("ID", Resultado.getString("idUsuario"));
-                            session.setAttribute("FotoPerfil", Resultado.getBlob("Usuario_Perfil"));
-                            session.setAttribute("Alias", Resultado.getString("Alias_Usuario"));
-                            Resultado.close();
-                            Sentencia.close();
+                            session.setAttribute("ID", result.getString("idUsuario"));
+                            session.setAttribute("FotoPerfil", result.getBlob("Usuario_Perfil"));
+                            session.setAttribute("Alias", result.getString("Alias_usuario"));
+                            result.close();
+                            stmt.close();
                             return true;
                         }
                         else{
-                                                 Query = "PAsa4";
-                            Resultado.close();
-                            Sentencia.close();
+                            result.close();
+                            stmt.close();
                             return false;
                         }
                     }
