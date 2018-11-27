@@ -31,7 +31,7 @@
 
 					<img src="Image/avatar3.png" alt="" class="avatar">
 
-					<form action="Registro" method="post" class="forma">
+					<form action="Registro" method="post" class="forma" enctype="multipart/form-data">
 						<input type="text" name="username" placeholder="Usuario">
 						<input type="text" name="nombre" placeholder="Nombre">
 						<input type="text" name="email" placeholder="Email">
