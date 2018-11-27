@@ -26,9 +26,11 @@
                     stmt = conn.createStatement();
                     result = stmt.executeQuery(Query);
                     while(result.next())
-                    {       
+                    {    
+                    out.println("Erroreeeeee" );    
                      if(result.getString("Contrasena").equals(request.getParameter("password")))
                         {   
+                                                out.println("Erroreeeeee" );    
                             session.setAttribute("ID", result.getString("idUsuario"));
                             session.setAttribute("FotoPerfil", result.getBlob("Usuario_Perfil"));
                             session.setAttribute("Alias", result.getString("Alias_usuario"));
@@ -42,6 +44,6 @@
                     }
 
     } catch (Exception e) {
-System.out.println("Error "+ e);    }
+out.println("Error "+ e);    }
 
 %>
