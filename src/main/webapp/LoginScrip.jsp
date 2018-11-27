@@ -22,7 +22,7 @@
     try {
 
     conn = DriverManager.getConnection(url,usuario,clave);
-    Query = "CALL Iniciar('"+request.getParameter("user")+"');";
+    String Query = "CALL Iniciar('"+request.getParameter("user")+"');";
                     stmt = conn.createStatement();
                     result = stmt.executeQuery(Query);
                     while(result.next())
@@ -34,12 +34,10 @@
                             session.setAttribute("Alias", result.getString("Alias_usuario"));
                             result.close();
                             stmt.close();
-                            return true;
                         }
                         else{
                             result.close();
                             stmt.close();
-                            return false;
                         }
                     }
 
