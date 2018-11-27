@@ -1,0 +1,175 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: borderbox;
+}
+body{
+	font-family: 'Monserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.padre{
+	display: flex;
+	flex-flow: column nowrap;
+}
+.margen-interno{
+	padding: 0 50px;
+}
+	.header{
+		display: flex;
+		flex-flow: column nowrap;
+		background: url(Difuminado2.png);
+		background-position: center;
+		background-attachment: contain;
+		background-size: cover;
+	}
+		.menu{
+				display: flex;
+				flex-flow: row nowrap;
+				height: 60px;
+				align-items: center;
+				background: rgba(0, 0, 0, 0.5);
+			}
+			.logo{
+					flex: 1 1 auto; 
+			}
+				.logo a{
+					color: #fff;
+					font-size: 30px;
+				}
+				.logo a:hover{
+					color:#343434;
+				}
+			.social{
+					flex: 1 1 auto;
+					display: flex;
+				}
+				.social a{
+					font-size:18px;
+					color:#fff;
+					padding:0 5px;
+				}
+				.social a:hover{
+					color:#343434;
+				}
+		.registro{
+			display: flex;
+			margin: 0 auto;
+			width: 400px;
+			height: 870px;
+			align-items: center;
+		}
+			.avatar{
+				width: 100px;
+				height: 100px;
+				top: 100px;
+				left: calc(50% - 50px);
+				position: absolute;
+			}
+			/*.portada{
+				width: 400px;
+				height: 200px;
+				top: 100px;
+				left: calc(50% - 50px);
+				position: absolute;
+			}*/
+			.registro form{
+				flex-flow: column nowrap;
+				color: #fff;
+				padding: 50px 50px;
+				background: rgba(0, 0, 0, 0.2); 
+				text-align: center;
+				border-radius: 5px;
+				top: 50px;
+			}
+				/*.registro p{
+					margin: 0;
+					padding: 0;
+					font-weight: bold;
+				}*/
+				.forma input{
+					width: 100%;
+					margin-bottom: 20px;			
+				}
+				.forma input[type="text"], input[type="password"]{
+					border: none;
+					border-bottom: 1px solid #fff;
+					color: white;
+					background: transparent;
+					outline: none;
+					height: 40px;
+					font-size: 16px;
+				}
+				.forma input[type="submit"]{
+					border: none;
+					outline: none;
+					height: 40px;
+					background: black;
+					color: #fff;
+					font-size: 14px;
+					border-radius: 20px;
+				}
+				.forma input[type="submit"]:hover{
+					cursor: pointer;
+					background: white;
+					color: #000;
+				}	
+				.forma input[type="radio"]{
+					margin: 3px;
+				}
+				.forma a{
+					font-size: 13px;
+					color: #fff;
+				}
+				.forma a:hover{
+					color:#343434;
+				}
+					.radio{
+						padding: 20px 20px;
+					}
+						.radio p{
+							margin: 0 0 10px 0px;
+						}
+						.radio span{
+							display: inline-block;
+							justify-content: center;
+						}
+					.birthday{
+						margin: 20px 20px;
+					}
+						.birthday p{
+							margin: 0 0 10px 0px;
+						}
+						.birthday select{
+							outline: 0px;
+							width: 50px;
+							padding: 10px;
+							margin: 0px 5px;
+							border: none;
+							color: #fff;
+							background: rgba(0, 0, 0, 0.5); 
+						}						
+	/*.section{
+		display: flex;
+		flex-flow: row nowrap;
+		background: #000;
+	}
+		.section form{
+			flex: 1 1 auto;
+			background: #4e4e6a;
+			background: #4e4e6a;
+		}*/
+	.footer{
+		background: #000;
+	}
+		.pie{
+			text-align: center;
+		}
+		.pie a{
+			padding: 0 10px;
+			color: #fff;
+			font-size: 11px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}

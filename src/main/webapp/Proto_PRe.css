@@ -1,0 +1,109 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Monserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-family: 'Monserrat', sans-serif;
+	font-size: 40px;
+	padding: 0 10px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+form{
+	align-items: center;
+}
+
+.padre{
+	display: flex;
+		flex-flow: column nowrap;
+}
+.margen-interno{
+	padding: 0 100px;
+}
+	.header{
+		background: url(Difuminado2.png);
+		background-position: center;
+		background-attachment: contain;
+		background-size: cover;
+		display: flex;
+		flex-flow: column nowrap;
+	}
+		.menu{
+			display: flex;
+			flex-flow: row nowrap;
+			height: 60px;
+			background: rgba(0, 0, 0, 1);
+			align-items: center;
+		}
+			.logo{
+				flex: 1 1 auto; 
+			}
+				.logo a{
+					color: #fff;
+					font-size: 30px;
+				}
+					.logo a:hover{
+						color: #343434;
+					}
+			.buscador{
+				flex: 1 1 auto; 
+			}
+			.nav{
+				flex: 1 1 auto; 
+			}
+				.nav a{
+						color: #fff;
+						font-size: 11px;
+						text-transform: uppercase;
+						padding: 0 10px;
+						letter-spacing: 2px;
+				}
+					.nav a:hover{
+						color: #343434;
+					}
+		.principal{
+			height: 430px;
+			display: flex;
+			align-items: center;
+		}
+			.info{
+				flex: 1 1 auto;
+				background: #ffff00;
+			}
+	
+	.aside{
+		/*position: fixed;
+		float: right;*/
+		flex: 1 1 20%;
+		margin:10px 5px 0 0px;
+		background: rgba(0, 0, 0, .5);
+		/*position:fixed; top: 60px; right: 2%;*/}
+
+.wrap {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 20px;
+    /*margin: auto;*/
+}
+ 
+.formulario h2 {
+    font-size: 16px;
+    color: #001F3F;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+ 
+.formulario > div {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}

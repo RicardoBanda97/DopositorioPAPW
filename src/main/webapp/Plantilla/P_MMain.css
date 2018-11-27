@@ -1,0 +1,90 @@
+*{
+	padding: 10px;
+	margin: 10px;
+	box-sizing: borderbox;
+}
+body{
+	font-family: 'Monserrat', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.padre{
+	display: flex;
+	flex-flow: column nowrap;
+}
+	.header{
+		display: flex;
+		flex-flow: column nowrap;
+		background: #000;
+	}
+		.menu{
+			display: flex;
+			flex-flow: row nowrap;
+			height: 60px;
+			background: #2d4059;
+		}
+			.logo{
+				flex: 1 1 auto; 
+				background: #ea5455;
+			}
+			.buscador{
+				flex: 1 1 auto; 
+				background: #ea5455;
+			}
+			.nav{
+				flex: 1 1 auto; 
+				background: #ea5455;
+			}
+			.social{
+				flex: 1 1 auto; 
+				background: #ea5455;
+			}
+		.principal{
+			height: 430px;
+			display: flex;
+			background: #f07b3f;
+		}
+			.info{
+				flex: 1 1 auto;
+				background: #ffff00;
+			}
+	.section{
+		display: flex;
+		flex-flow: row nowrap;
+		background: #000;
+	}
+		.videos{
+			flex: 1 1 80%;
+			background: #4e4e6a;
+		}
+			.tema{
+				display: flex;
+				flex-flow: row nowrap; 
+				background: #99ccff;
+			}
+				.video{
+					flex: 1 1 20%;
+					background: #1f6cb0;
+				}
+		.aside{
+			/*position: fixed;
+			float: right;*/
+			flex: 1 1 20%;
+			background: #ff4444;
+			/*position:fixed; top: 60px; right: 2%;*/
+		}
+	.footer{
+		background: #000;
+	}
+		.pie{
+			text-align: center;
+			background: #e6af2e;
+		}
+		.pie a{
+			padding: 0 10px;
+			color: #fff;
+			font-size: 11px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}

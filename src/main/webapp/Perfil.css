@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Monserrat', sans-serif;
+}
+.padre{
+	display: flex;
+	flex-flow: column nowrap;
+}
+.margen-interno{
+	padding: 0 50px;
+}
+a{
+	text-decoration: none;
+}
+	.header{
+		display: flex;
+		flex-flow: column nowrap;
+		background: #000;
+	}
+		.portada{
+			height: 300px;
+			/*background: #f07b3f;*/
+			background: url(libre.jpg);
+			background-position: center;
+			background-attachment: contain;
+			background-size: cover;
+		}
+		.menu{
+			display: flex;
+			flex-flow: row wrap;
+			background: rgba(0, 0, 0, 0.5);
+			align-items: center;
+		}
+			.usuario{
+				flex: 4 1 auto;
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				/*background: #ea5455;*/
+			}
+				.usuario img{
+					flex: 1  1 auto;
+					max-height: 100px;
+					max-width: 100px;
+					height: 100%;
+					width: 100%;
+					margin: 10px 10px;
+					/*display: inline-block;*/
+					border-radius: 50%;
+					/*background: #ea5400;*/
+				}
+				.usuario p{
+					flex: 1  1 auto;
+					text-align: center;
+					font-size: 25px;
+					color: #fff;
+					width: 0px;
+					padding: 0px;
+					margin: 0px;
+					/*background: #ea5400;*/
+
+				}
+			.Carrito{
+				flex: 1 1 auto;
+				justify-content: center;
+				/*background: #ea5455;*/
+			}
+				.Carrito button{
+					display: inline-block;
+					font-size: 20px;
+					text-decoration: none;
+					color: #fff;
+					border: none;
+					border-radius: 2px;
+					padding: 12px 35px;
+					background: blue;
+				}
+			.nav{
+				border-top: 1px solid white;
+				font-size: 15px;
+				color: white;
+				flex: 1 1 auto;
+				display: flex;
+				flex-flow: row nowrap;
+				width: 100%;
+				margin: 10px 0;
+				justify-content: center;
+			}
+				.nav p{
+					margin: 10px 50px;
+				}
+		.section{
+			display: flex;
+			/*background: #000;*/
+			background:#f7f7f7;
+		}
+			.aside{
+				flex: 1 1 20%;
+				margin:10px 5px 0 0px;
+				background: rgba(0, 0, 0, .2);
+				/*background:#f7f7f7;*/
+			}
+			.area{
+				flex: 2 1 80%;
+				display: flex;
+				flex-flow: column nowrap;
+			}
+			.presentacion{
+					background:#ececec;
+					color: #444;
+					font-size: 13px;
+					letter-spacing: 1px;
+					margin: 10px 10px 0 0px;
+			}
+				.presentacion img{
+					
+				}
+				.presentacion a{
+					padding: 7px;
+					margin: 7px 0;
+					background: black;
+					font-size: 13px;
+					color: white;
+					display: inline-block;
+						/*margin-top: -20px;*/
+				}
+				.presentacion a:hover{
+						background:#546cc3;
+					}
+			
