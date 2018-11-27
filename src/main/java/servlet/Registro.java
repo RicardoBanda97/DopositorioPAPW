@@ -64,7 +64,7 @@ public class Registro extends HttpServlet{
 
             conn= DriverManager.getConnection(dbURL, dbUser, dbPass);
 
-            String query ="CALL RegistroUsuarios(?,?,?,?,?,?,?);";
+            String query ="CALL Registrar(?,?,?,?,?,?,?);";
             PreparedStatement statement = conn.prepareStatement(query);
             statement.setString(1,nombre);
             statement.setString(2,email);
